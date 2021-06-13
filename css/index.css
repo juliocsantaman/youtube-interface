@@ -79,3 +79,23 @@ header {
     font-size: 1rem;
     color: #818181;
 }
+
+/* MENU */
+li, .fa-bars {
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.list-container {
+    background-color: #212121;
+    width: 20%;
+    color: #dedede;
+    height: 40vh;
+}
+
+.section-01 {
+    list-style: none;
+    border-top: 1px solid gray;
+}
+
+/* END OF MENU */
