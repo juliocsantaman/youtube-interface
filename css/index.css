@@ -8,7 +8,10 @@
     display: grid;
     width: 100%;
     height: 1000px;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
     grid-template: "header header"
+                    "sidebar tags"
                     "sidebar videos";
 }
 
@@ -25,15 +28,22 @@ header {
     background-color: #212121;
     color: #dedede;
     margin-right: 10rem;
-    width: 90%;
+    width: 100%;
+}
+
+.tag-container {
+    grid-area: tags;
+    height: 100%;
+    margin-bottom: 2rem;
+    background-color: #202020;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .video-container {
     grid-area: videos;
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: stretch;
+    /* margin-top: 1rem; */
 }
 
 /* END OF GRID AREA */
@@ -86,6 +96,10 @@ header {
     margin-right: 1.5rem;
 }
 
+.fa-chevron-left, .fa-chevron-right {
+    font-size: 1rem;
+}
+
 .youtube-title {
     color: #ffffff;
     font-size: 1.5rem;
@@ -135,3 +149,28 @@ iframe {
 }
 
 /* END OF VIDEOS */
+
+/* TAGS */
+.tag-container span {
+    background-color: #373737;
+    color: #ffffff;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.tag-container span:hover {
+    opacity: 0.9;
+}
+
+.tag-container .first-tag {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.tag-container .first-tag:hover {
+    opacity: 0.9;
+}
+
+/* END OF TAGS */

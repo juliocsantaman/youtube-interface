@@ -1,6 +1,10 @@
-// const faBars = document.getElementById('fa-bars');
-// const menu = document.getElementById('menu');
-
-// faBars.addEventListener('click', function() {
-//     menu.classList.toggle('inactive-menu');
-// });
+new Glider(document.querySelector('.glider'), {
+    slidesToShow: 11,
+    slidesToScroll: 1,
+    draggable: false,
+    dots: '.dots',
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    }
+  });
