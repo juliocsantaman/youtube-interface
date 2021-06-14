@@ -8,11 +8,10 @@
     display: grid;
     width: 100%;
     height: 1000px;
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: repeat(2, auto);
     grid-template: "header header"
                     "sidebar tags"
                     "sidebar videos";
+    grid-template-rows: 100px 60px auto;
 }
 
 header {
@@ -23,18 +22,21 @@ header {
     grid-area: header;
 }
 
+header div {
+    margin-top: 1rem;
+}
+
 .menu-container {
     grid-area: sidebar;
     background-color: #212121;
     color: #dedede;
-    margin-right: 10rem;
     width: 100%;
+    overflow-y: scroll;
 }
 
 .tag-container {
     grid-area: tags;
     height: 100%;
-    margin-bottom: 2rem;
     background-color: #202020;
     display: flex;
     justify-content: space-around;
@@ -43,7 +45,8 @@ header {
 
 .video-container {
     grid-area: videos;
-    /* margin-top: 1rem; */
+    display: flex;
+    justify-content: center;
 }
 
 /* END OF GRID AREA */
@@ -130,13 +133,13 @@ li {
     margin-left: 1rem;
 }
 
-.list-container {
-    height: 40vh;
-}
-
 .section-01 {
     list-style: none;
-    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.menu-container .section-01 .fa-user-circle {
+    margin: 0%;
 }
 
 /* END OF MENU */
