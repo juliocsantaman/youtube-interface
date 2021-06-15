@@ -3,6 +3,11 @@
     padding: 0%;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+}
+
 /* GRID AREA */
 .container {
     display: grid;
@@ -82,14 +87,14 @@ header div {
     font-size: 1.2rem;
 }
 
-.fa-video-slash, .fa-th, .fa-bell, .fa-user-circle {
+.fa-video-slash, .fa-th, .fa-bell {
     color: #ffffff;
     padding: 0.5rem;
     cursor: pointer;
     font-size: 1.2rem;
 }
 
-.fa-th, .fa-bell, .fa-user-circle {
+.fa-th, .fa-bell {
     margin-left: 1rem;
 }
 
@@ -97,10 +102,6 @@ header div {
     color: #ffffff;
     font-size: 1.5rem;
     margin-right: 1.5rem;
-}
-
-.fa-chevron-left, .fa-chevron-right {
-    font-size: 1rem;
 }
 
 .youtube-title {
@@ -130,7 +131,7 @@ li {
     cursor: pointer;
     display: block;
     margin-top: 1rem;
-    margin-left: 1rem;
+    padding: 1rem;
 }
 
 .section-01 {
@@ -142,6 +143,30 @@ li {
     margin: 0%;
 }
 
+.menu-container .list-container ul li:hover {
+    background-color: rgba(158, 158, 158, 0.2);
+    padding: 1rem;
+}
+
+.first-active-item {
+    background-color: rgba(158, 158, 158, 0.2);
+}
+
+.menu-container .list-container ul li:first-child:hover {
+    background-color: rgba(158, 158, 158, 0.3);
+}
+
+.menu-container .list-container ul span {
+    padding: 1rem;
+}
+
+.menu-container .list-container .section-06 p {
+    word-spacing: 1rem;
+}
+
+.menu-container .list-container .section-06 .copyright {
+    color: #606060;
+}
 /* END OF MENU */
 
 /* VIDEOS */
