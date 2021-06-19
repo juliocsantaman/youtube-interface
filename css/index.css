@@ -106,6 +106,10 @@ header .others i {
     margin-right: 1.5rem;
 }
 
+.fa-bars:hover {
+    opacity: 0.5;
+}
+
 .youtube-title {
     color: #ffffff;
     font-size: 1.5rem;
@@ -188,6 +192,33 @@ li {
 .menu-container .list-container .section-06 .copyright {
     color: #606060;
 }
+
+/* STYLES FOR ONLY ICON */
+.inactive-menu-container {
+    display: none;
+}
+
+.menu-container-02 .list-container ul li {
+    margin: 0%;
+    text-align: center;
+}
+
+.menu-container-02 .list-container ul li i {
+    font-size: 2rem;
+}
+
+.menu-container-02 .list-container .section-01 {
+    border-bottom: none;
+}
+
+.menu-container-02::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-container-02 {
+    overflow-y: hidden;
+}
+/*END OF STYLES FOR ONLY ICON */
 
 /* END OF MENU */
 
