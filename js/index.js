@@ -7,12 +7,12 @@ console.log(menuContainer02.classList.contains('inactive-menu-container'));
 
 faBars.addEventListener('click', function() {
     
-    if(menuContainer02.classList.contains('inactive-menu-container')) {
-        container.style.gridTemplateColumns = '5% 95%';
-    } else {
-        container.style.gridTemplateColumns = '20% 80%';
-    }
+    // if(menuContainer02.classList.contains('inactive-menu-container')) {
+    //     container.style.gridTemplateColumns = '5% 95%';
+    // } else {
+    //     container.style.gridTemplateColumns = '20% 80%';
+    // }
 
-    menuContainer01.classList.toggle('inactive-menu-container');
-    menuContainer02.classList.toggle('inactive-menu-container');
+    // menuContainer01.classList.toggle('inactive-menu-container');
+    // menuContainer02.classList.toggle('inactive-menu-container');
 });

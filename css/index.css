@@ -13,11 +13,11 @@ body {
     display: grid;
     width: 100%;
     height: 1000px;
-    grid-template: "header header"
-                    "sidebar tags"
-                    "sidebar videos";
+    grid-template: "header"
+                    "tags"
+                    "videos";
     grid-template-rows: 100px 60px auto;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 100%;
 }
 
 header {
@@ -37,6 +37,7 @@ header div {
     background-color: #212121;
     color: #dedede;
     overflow-y: scroll;
+    display: none;
 }
 
 .tag-container {
@@ -73,31 +74,37 @@ header div {
     font-size: 1.5rem;
 }
 
-.fa-search {
+header .search .fa-search {
     width: 3rem;
-    /* height: 2rem; */
     padding: 0.5rem;
     text-align: center;
     color: #494949;
-    background-color: #323232;
+    background-color: unset;
     cursor: pointer;
     border: none;
+    display: none;
+}
+
+header .search .fa-search-02 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    display: unset;
 }
 
 .fa-microphone {
     color: #ffffff;
-    padding: 0.5rem;
     cursor: pointer;
     font-size: 1.2rem;
 }
 
 header .others i {
     color: #ffffff;
-    padding: 0.5rem;
     cursor: pointer;
     font-size: 1.2rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
 }
 
 .fa-bars {
@@ -117,11 +124,11 @@ header .others i {
 
 .input-search {
     width: 700px;
-    /* height: 2rem; */
     padding: 0.5rem;
     background-color: #121212;
     border: none;
     color: #ffffff;
+    display: none;
 }
 
 .input-search:focus {
