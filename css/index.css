@@ -40,6 +40,13 @@ header div {
     display: none;
 }
 
+.menu-container-02 {
+    grid-area: sidebar;
+    background-color: #212121;
+    color: #dedede;
+    overflow-y: scroll;
+}
+
 .tag-container {
     grid-area: tags;
     height: 100%;
@@ -201,6 +208,29 @@ li {
 }
 
 /* STYLES FOR ONLY ICON */
+.menu-container-02 .list-container ul li:hover {
+    background-color: rgba(158, 158, 158, 0.2);
+}
+
+.menu-container-02 .list-container ul li i {
+    margin-right: 1rem;
+}
+
+.menu-container-02 .list-container ul li:first-child:hover {
+    background-color: rgba(158, 158, 158, 0.3);
+}
+
+.menu-container-02 .list-container ul span {
+    padding: 1rem;
+}
+
+.menu-container-02 .list-container .section-06 p {
+    word-spacing: 1rem;
+}
+
+.menu-container-02 .list-container .section-06 .copyright {
+    color: #606060;
+}
 .inactive-menu-container {
     display: none;
 }
