@@ -4,18 +4,15 @@ No media query for `xs` since this is the default in Bootstrap
 */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-}
+@media (min-width: 576px) { }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-   
-}
+@media (min-width: 768px) { }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     .container {
-        display: grid;
+        /* display: grid; */
         width: 100%;
         height: 1000px;
         grid-template: "header header"
@@ -24,9 +21,15 @@ No media query for `xs` since this is the default in Bootstrap
         grid-template-rows: 100px 60px auto;
         grid-template-columns: 20% 80%;
     }
-
+    
     .menu-container {
+        grid-area: sidebar;
+        width: 100%;
+        background-color: #212121;
+        color: #dedede;
+        overflow-y: scroll;
         display: unset;
+        position: unset;
     }
 
     header .search .fa-search {
@@ -60,7 +63,6 @@ No media query for `xs` since this is the default in Bootstrap
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { 
-}
+@media (min-width: 1400px) { }
 
 /* END OF RESPONSIVE */

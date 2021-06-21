@@ -32,8 +32,20 @@ header div {
     margin-top: 1rem;
 }
 
-.menu-container {
+/* .menu-container {
     grid-area: sidebar;
+    background-color: #212121;
+    color: #dedede;
+    overflow-y: scroll;
+    display: none;
+} */
+
+.menu-container {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    height: 100%;
+    width: 50%;
     background-color: #212121;
     color: #dedede;
     overflow-y: scroll;
@@ -235,6 +247,10 @@ li {
     display: none;
 }
 
+.active-menu-container {
+    display: block;
+}
+
 .menu-container-02 .list-container ul li {
     margin: 0%;
     text-align: center;
@@ -256,7 +272,6 @@ li {
     overflow-y: hidden;
 }
 /*END OF STYLES FOR ONLY ICON */
-
 /* END OF MENU */
 
 /* VIDEOS */
